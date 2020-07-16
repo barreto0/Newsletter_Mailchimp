@@ -19,9 +19,9 @@ app.post("/", function(req, res){
     const email = req.body.email;
     console.log(nome,sobrenome,email);
 
-    if(nome || sobrenome || email === ""){
+    if(nome  === "" || sobrenome === "" || email === ""){
         res.sendFile(__dirname + "/failure.html");
-    }
+    }else{
 
     const dados = {
         members: [
@@ -62,6 +62,8 @@ app.post("/", function(req, res){
     request.write(dadosJSON);
     request.end();
 
+    
+    }
     
 });
 
