@@ -1,0 +1,16 @@
+{
+  "name": "newsletter-signup",
+  "version": "1.0.0",
+  "description": "Aplicação web de newsletter com node (express)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel Barreto",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "superagent": "^5.3.1"
+  }
+}
