@@ -56,6 +56,7 @@ app.post("/", function(req, res){
             res.sendFile(__dirname+"/success.html");
         }else{
             res.sendFile(__dirname+"/failure.html");
+            $("#errorField").append(` <i>${response.statusCode}</i>`);
         }
     });
 
@@ -88,3 +89,5 @@ app.listen(process.env.PORT || 3000, function(){ // "process.env.PORT" necessár
 
 //Unique ID for audience
 // 7f1ae50f3d
+
+//https://blooming-savannah-08569.herokuapp.com/
