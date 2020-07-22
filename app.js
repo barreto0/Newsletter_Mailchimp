@@ -38,11 +38,11 @@ app.post("/", function(req, res){
 
     const dadosJSON = JSON.stringify(dados);
 
-    const url = "https://us10.api.mailchimp.com/3.0/lists/7f1ae50f3d";
+    const url = "https://usX.api.mailchimp.com/3.0/lists/7f1ae50f3d";
 
     const options = {
         method: "POST",
-        auth: "barreto:61e8f981a7804d87e205b230fcf4a823-us10"
+        auth: "barreto: key"
     }
     
 
@@ -83,11 +83,5 @@ app.listen(process.env.PORT || 3000, function(){ // "process.env.PORT" necessár
 // app.listen(3000, function(){
 //     console.log("Servidor iniciou na porta 3000");
 // });
-
-//Mailchimp API key
-// 61e8f981a7804d87e205b230fcf4a823-us10
-
-//Unique ID for audience
-// 7f1ae50f3d
 
 //https://blooming-savannah-08569.herokuapp.com/
